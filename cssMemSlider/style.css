@@ -102,3 +102,21 @@ html {
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 8px;
+    }
+    .wrapper {
+        grid-template-rows: 60rem 5rem auto;
+        width: 100%;
+        gap: 1rem;
+        grid-template-areas: "image image image image image image image image image image image image"
+                             ". . . . c1 c2 c3 c4 . . . ."
+                             "caption caption caption caption caption caption caption caption caption caption caption caption"
+    }
+    .wrapper .image {
+        width: 100%;
+    }
+    
+}
